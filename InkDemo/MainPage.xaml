@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="InkDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InkDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+            <TextBlock Name="displayText"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <InkCanvas x:Name="inkCanvas"></InkCanvas>
+
+            <InkToolbar TargetInkCanvas="{x:Bind inkCanvas}" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <InkToolbar.Children>
+                    <InkToolbarCustomToolButton>
+                        <AppBarButton Icon="Repair" Click="AppBarButton_Click">
+                        </AppBarButton>
+                    </InkToolbarCustomToolButton>
+                </InkToolbar.Children>
+            </InkToolbar>
+        </Grid>
+    </Grid>
+</Page>
