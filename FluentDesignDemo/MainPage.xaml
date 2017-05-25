@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="FluentDesignDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FluentDesignDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource SystemControlAcrylicMediumWindowBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Margin="50">
+            <ParallaxView Source="{x:Bind ForegroundElement}" VerticalShift="50">
+                <Image x:Name="BackgroundImage" Source="Assets/mushroom.jpg"
+               Stretch="UniformToFill"/>
+            </ParallaxView>
+
+            <ListView x:Name="ForegroundElement" RequestedTheme="Dark">
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 1</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 2</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 3</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 4</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 5</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 6</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 7</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 8</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 9</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 10</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 11</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 12</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 13</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 14</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 15</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 16</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 17</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 18</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 19</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 20</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 21</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 22</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 23</x:String>
+                </ListViewItem>
+                <ListViewItem Style="{ThemeResource ListViewItemRevealStyle}">
+                    <x:String>Item 24</x:String>
+                </ListViewItem>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>
